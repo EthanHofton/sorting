@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/ethanhofton/Documents/c++/sorting'
+rm -rf bin src/main.o src/random.o src/timer.o
+mkdir -p ./bin
+c++ -o src/main.o -c src/main.cpp -Wall -std=c++17 -Iinclude/ 
+c++ -o src/random.o -c src/random.cpp -Wall -std=c++17 -Iinclude/ 
+c++ -o src/timer.o -c src/timer.cpp -Wall -std=c++17 -Iinclude/ 
+c++ -o bin/out src/main.o src/random.o src/timer.o 
+make: Leaving directory `/Users/ethanhofton/Documents/c++/sorting'
+ 
